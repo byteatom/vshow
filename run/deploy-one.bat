@@ -9,4 +9,4 @@ call deploy-qt.bat %1 %2 %3
 
 call copy_cmd.bat ..\lib\vcrt\%1-%2\* %DST_DIR%
 
-call copy_cmd.bat asset\* %DST_DIR%
+call copy_cmd.bat ..\asset\* %DST_DIR%
