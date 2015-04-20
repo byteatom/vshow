@@ -1,0 +1,454 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ScanUi</class>
+ <widget class="QWizard" name="ScanUi">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>560</width>
+    <height>384</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Config wizard</string>
+  </property>
+  <property name="wizardStyle">
+   <enum>QWizard::ModernStyle</enum>
+  </property>
+  <property name="options">
+   <set>QWizard::NoBackButtonOnStartPage</set>
+  </property>
+  <widget class="QWizardPage" name="pagePara">
+   <widget class="QLabel" name="baseColorTag">
+    <property name="geometry">
+     <rect>
+      <x>88</x>
+      <y>104</y>
+      <width>105</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Color mode:</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="widthTag">
+    <property name="geometry">
+     <rect>
+      <x>88</x>
+      <y>144</y>
+      <width>105</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Width:</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="heightTag">
+    <property name="geometry">
+     <rect>
+      <x>88</x>
+      <y>184</y>
+      <width>105</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Height:</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="hub">
+    <property name="geometry">
+     <rect>
+      <x>200</x>
+      <y>224</y>
+      <width>265</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Extend to 20 groups of data</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="baseColor">
+    <property name="geometry">
+     <rect>
+      <x>200</x>
+      <y>104</y>
+      <width>145</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <item>
+     <property name="text">
+      <string>Mono</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Full</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QSpinBox" name="width">
+    <property name="geometry">
+     <rect>
+      <x>200</x>
+      <y>144</y>
+      <width>81</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="minimum">
+     <number>1</number>
+    </property>
+    <property name="maximum">
+     <number>128</number>
+    </property>
+   </widget>
+   <widget class="QSpinBox" name="height">
+    <property name="geometry">
+     <rect>
+      <x>200</x>
+      <y>184</y>
+      <width>81</width>
+      <height>24</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="chip138">
+    <property name="geometry">
+     <rect>
+      <x>200</x>
+      <y>256</y>
+      <width>265</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Has 138 codec chip</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QWizardPage" name="pageData">
+   <widget class="QCheckBox" name="dataPolarity">
+    <property name="geometry">
+     <rect>
+      <x>200</x>
+      <y>176</y>
+      <width>265</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Revert data polarity</string>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="white">
+    <property name="geometry">
+     <rect>
+      <x>200</x>
+      <y>224</y>
+      <width>115</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>White</string>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="black">
+    <property name="geometry">
+     <rect>
+      <x>200</x>
+      <y>256</y>
+      <width>115</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Black</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QWizardPage" name="pageOe">
+   <widget class="QRadioButton" name="bright">
+    <property name="geometry">
+     <rect>
+      <x>200</x>
+      <y>224</y>
+      <width>115</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Bright</string>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="dark">
+    <property name="geometry">
+     <rect>
+      <x>200</x>
+      <y>256</y>
+      <width>115</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Dark</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="oePolarity">
+    <property name="geometry">
+     <rect>
+      <x>200</x>
+      <y>176</y>
+      <width>265</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Revert OE polarity</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QWizardPage" name="pageColor">
+   <widget class="QRadioButton" name="color1Tag">
+    <property name="geometry">
+     <rect>
+      <x>200</x>
+      <y>160</y>
+      <width>89</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Color 1:</string>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="color2Tag">
+    <property name="geometry">
+     <rect>
+      <x>200</x>
+      <y>192</y>
+      <width>115</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Color 2:</string>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="color3Tag">
+    <property name="geometry">
+     <rect>
+      <x>200</x>
+      <y>224</y>
+      <width>115</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Color 3:</string>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="color4Tag">
+    <property name="geometry">
+     <rect>
+      <x>200</x>
+      <y>256</y>
+      <width>115</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Color 4:</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="color1">
+    <property name="geometry">
+     <rect>
+      <x>296</x>
+      <y>160</y>
+      <width>89</width>
+      <height>24</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="color2">
+    <property name="geometry">
+     <rect>
+      <x>296</x>
+      <y>192</y>
+      <width>89</width>
+      <height>24</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="color3">
+    <property name="geometry">
+     <rect>
+      <x>296</x>
+      <y>224</y>
+      <width>89</width>
+      <height>24</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="color4">
+    <property name="geometry">
+     <rect>
+      <x>296</x>
+      <y>256</y>
+      <width>89</width>
+      <height>24</height>
+     </rect>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QWizardPage" name="pageUnitLine">
+   <widget class="QLabel" name="intfLinesTag">
+    <property name="geometry">
+     <rect>
+      <x>168</x>
+      <y>256</y>
+      <width>121</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Bright lines:</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    </property>
+   </widget>
+   <widget class="QSpinBox" name="intfLines">
+    <property name="geometry">
+     <rect>
+      <x>296</x>
+      <y>256</y>
+      <width>81</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="minimum">
+     <number>1</number>
+    </property>
+    <property name="maximum">
+     <number>32</number>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QWizardPage" name="pageLightLine">
+   <widget class="QSpinBox" name="wrapTimes">
+    <property name="geometry">
+     <rect>
+      <x>296</x>
+      <y>256</y>
+      <width>81</width>
+      <height>24</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="wrapTimesTag">
+    <property name="geometry">
+     <rect>
+      <x>168</x>
+      <y>256</y>
+      <width>121</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Bright lines:</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QWizardPage" name="pageDotmap">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <property name="spacing">
+     <number>8</number>
+    </property>
+    <property name="leftMargin">
+     <number>8</number>
+    </property>
+    <property name="topMargin">
+     <number>8</number>
+    </property>
+    <property name="rightMargin">
+     <number>10</number>
+    </property>
+    <property name="bottomMargin">
+     <number>8</number>
+    </property>
+    <item>
+     <widget class="QTableWidget" name="dotmap">
+      <attribute name="horizontalHeaderDefaultSectionSize">
+       <number>40</number>
+      </attribute>
+      <attribute name="horizontalHeaderMinimumSectionSize">
+       <number>40</number>
+      </attribute>
+      <attribute name="verticalHeaderDefaultSectionSize">
+       <number>32</number>
+      </attribute>
+      <attribute name="verticalHeaderMinimumSectionSize">
+       <number>32</number>
+      </attribute>
+     </widget>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <property name="spacing">
+       <number>7</number>
+      </property>
+      <item>
+       <spacer name="horizontalSpacer">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QPushButton" name="undo">
+        <property name="text">
+         <string>Undo</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="reset">
+        <property name="text">
+         <string>Reset</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

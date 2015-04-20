@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ScreenCfger</class>
+ <widget class="QFrame" name="ScreenCfger">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>480</width>
+    <height>64</height>
+   </rect>
+  </property>
+  <widget class="QCheckBox" name="lock">
+   <property name="geometry">
+    <rect>
+     <x>152</x>
+     <y>0</y>
+     <width>91</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Lock</string>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="top">
+   <property name="geometry">
+    <rect>
+     <x>152</x>
+     <y>32</y>
+     <width>141</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Always on top</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,662 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>CardUi</class>
+ <widget class="QDialog" name="CardUi">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>794</width>
+    <height>560</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QPushButton" name="read">
+   <property name="geometry">
+    <rect>
+     <x>336</x>
+     <y>520</y>
+     <width>96</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Read</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="send">
+   <property name="geometry">
+    <rect>
+     <x>456</x>
+     <y>520</y>
+     <width>96</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Send</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="save">
+   <property name="geometry">
+    <rect>
+     <x>576</x>
+     <y>520</y>
+     <width>96</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Save</string>
+   </property>
+  </widget>
+  <widget class="QListWidget" name="cards">
+   <property name="geometry">
+    <rect>
+     <x>8</x>
+     <y>8</y>
+     <width>209</width>
+     <height>505</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QFrame" name="attr">
+   <property name="geometry">
+    <rect>
+     <x>224</x>
+     <y>8</y>
+     <width>561</width>
+     <height>505</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Plain</enum>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <property name="spacing">
+     <number>8</number>
+    </property>
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+    <item>
+     <widget class="QFrame" name="card">
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>72</height>
+       </size>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <widget class="QLabel" name="detailTag">
+       <property name="geometry">
+        <rect>
+         <x>15</x>
+         <y>8</y>
+         <width>105</width>
+         <height>24</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Description:</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="detail">
+       <property name="geometry">
+        <rect>
+         <x>128</x>
+         <y>8</y>
+         <width>409</width>
+         <height>24</height>
+        </rect>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+      <widget class="QComboBox" name="screen">
+       <property name="geometry">
+        <rect>
+         <x>128</x>
+         <y>40</y>
+         <width>201</width>
+         <height>24</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QLabel" name="screenTag">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>40</y>
+         <width>121</width>
+         <height>24</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Source Screen:</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+     </widget>
+    </item>
+    <item>
+     <widget class="QFrame" name="recvCard">
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <widget class="QSpinBox" name="refresh">
+       <property name="geometry">
+        <rect>
+         <x>448</x>
+         <y>88</y>
+         <width>81</width>
+         <height>24</height>
+        </rect>
+       </property>
+       <property name="minimum">
+        <number>60</number>
+       </property>
+       <property name="maximum">
+        <number>9999</number>
+       </property>
+       <property name="value">
+        <number>120</number>
+       </property>
+      </widget>
+      <widget class="QComboBox" name="gray">
+       <property name="geometry">
+        <rect>
+         <x>128</x>
+         <y>88</y>
+         <width>137</width>
+         <height>24</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QLabel" name="freqTag">
+       <property name="geometry">
+        <rect>
+         <x>8</x>
+         <y>48</y>
+         <width>111</width>
+         <height>24</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Frequency:</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="gammaTag">
+       <property name="geometry">
+        <rect>
+         <x>304</x>
+         <y>128</y>
+         <width>137</width>
+         <height>24</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Gamma Correction:</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="grayTag">
+       <property name="geometry">
+        <rect>
+         <x>8</x>
+         <y>88</y>
+         <width>111</width>
+         <height>24</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Grayscale:</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="refreshTag">
+       <property name="geometry">
+        <rect>
+         <x>328</x>
+         <y>88</y>
+         <width>111</width>
+         <height>24</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Refresh Rate:</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+      <widget class="QCheckBox" name="keep">
+       <property name="geometry">
+        <rect>
+         <x>128</x>
+         <y>184</y>
+         <width>177</width>
+         <height>24</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Keep last picture</string>
+       </property>
+      </widget>
+      <widget class="QCheckBox" name="fade">
+       <property name="geometry">
+        <rect>
+         <x>128</x>
+         <y>152</y>
+         <width>91</width>
+         <height>24</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Fade in</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="addScan">
+       <property name="geometry">
+        <rect>
+         <x>472</x>
+         <y>8</y>
+         <width>24</width>
+         <height>24</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset resource="../res/vshow.qrc">
+         <normaloff>:/image/scan_add_64.png</normaloff>:/image/scan_add_64.png</iconset>
+       </property>
+      </widget>
+      <widget class="QComboBox" name="scan">
+       <property name="geometry">
+        <rect>
+         <x>128</x>
+         <y>8</y>
+         <width>305</width>
+         <height>24</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="editScan">
+       <property name="geometry">
+        <rect>
+         <x>440</x>
+         <y>8</y>
+         <width>24</width>
+         <height>24</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset resource="../res/vshow.qrc">
+         <normaloff>:/image/scan_edit_64.png</normaloff>:/image/scan_edit_64.png</iconset>
+       </property>
+      </widget>
+      <widget class="QLabel" name="scanTag">
+       <property name="geometry">
+        <rect>
+         <x>48</x>
+         <y>8</y>
+         <width>72</width>
+         <height>24</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Scan:</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="delScan">
+       <property name="geometry">
+        <rect>
+         <x>504</x>
+         <y>8</y>
+         <width>24</width>
+         <height>24</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset resource="../res/vshow.qrc">
+         <normaloff>:/image/scan_delete_64.png</normaloff>:/image/scan_delete_64.png</iconset>
+       </property>
+      </widget>
+      <widget class="QComboBox" name="freq">
+       <property name="geometry">
+        <rect>
+         <x>128</x>
+         <y>48</y>
+         <width>137</width>
+         <height>24</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QSpinBox" name="blank">
+       <property name="geometry">
+        <rect>
+         <x>448</x>
+         <y>48</y>
+         <width>81</width>
+         <height>24</height>
+        </rect>
+       </property>
+       <property name="maximum">
+        <number>255</number>
+       </property>
+      </widget>
+      <widget class="QLabel" name="blankTag">
+       <property name="geometry">
+        <rect>
+         <x>328</x>
+         <y>48</y>
+         <width>111</width>
+         <height>24</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Line Blanking:</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+      <widget class="QDoubleSpinBox" name="gamma">
+       <property name="geometry">
+        <rect>
+         <x>448</x>
+         <y>128</y>
+         <width>81</width>
+         <height>24</height>
+        </rect>
+       </property>
+       <property name="decimals">
+        <number>1</number>
+       </property>
+       <property name="minimum">
+        <double>1.000000000000000</double>
+       </property>
+       <property name="maximum">
+        <double>6.000000000000000</double>
+       </property>
+       <property name="singleStep">
+        <double>0.100000000000000</double>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="link2">
+       <property name="geometry">
+        <rect>
+         <x>440</x>
+         <y>216</y>
+         <width>48</width>
+         <height>48</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>32</width>
+         <height>32</height>
+        </size>
+       </property>
+      </widget>
+      <widget class="QLabel" name="link1Tag">
+       <property name="geometry">
+        <rect>
+         <x>48</x>
+         <y>232</y>
+         <width>121</width>
+         <height>24</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Port 1 link:</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="link2Tag">
+       <property name="geometry">
+        <rect>
+         <x>312</x>
+         <y>232</y>
+         <width>121</width>
+         <height>24</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Port 2 link:</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="link1">
+       <property name="geometry">
+        <rect>
+         <x>176</x>
+         <y>216</y>
+         <width>48</width>
+         <height>48</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>32</width>
+         <height>32</height>
+        </size>
+       </property>
+      </widget>
+     </widget>
+    </item>
+    <item>
+     <widget class="QFrame" name="sendCard">
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>144</height>
+       </size>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <widget class="QLabel" name="blueTag">
+       <property name="geometry">
+        <rect>
+         <x>48</x>
+         <y>112</y>
+         <width>72</width>
+         <height>24</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Blue:</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+      <widget class="QSlider" name="red">
+       <property name="geometry">
+        <rect>
+         <x>128</x>
+         <y>48</y>
+         <width>401</width>
+         <height>24</height>
+        </rect>
+       </property>
+       <property name="maximum">
+        <number>256</number>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+      <widget class="QSlider" name="green">
+       <property name="geometry">
+        <rect>
+         <x>128</x>
+         <y>80</y>
+         <width>401</width>
+         <height>24</height>
+        </rect>
+       </property>
+       <property name="maximum">
+        <number>256</number>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+      <widget class="QLabel" name="greenTag">
+       <property name="geometry">
+        <rect>
+         <x>48</x>
+         <y>80</y>
+         <width>72</width>
+         <height>24</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Green:</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="edidTag">
+       <property name="geometry">
+        <rect>
+         <x>16</x>
+         <y>8</y>
+         <width>105</width>
+         <height>24</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Resolution:</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="redTag">
+       <property name="geometry">
+        <rect>
+         <x>48</x>
+         <y>48</y>
+         <width>72</width>
+         <height>24</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Red:</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+      <widget class="QSlider" name="blue">
+       <property name="geometry">
+        <rect>
+         <x>128</x>
+         <y>112</y>
+         <width>401</width>
+         <height>24</height>
+        </rect>
+       </property>
+       <property name="maximum">
+        <number>256</number>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+      <widget class="QComboBox" name="edid">
+       <property name="geometry">
+        <rect>
+         <x>128</x>
+         <y>8</y>
+         <width>201</width>
+         <height>24</height>
+        </rect>
+       </property>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QPushButton" name="close">
+   <property name="geometry">
+    <rect>
+     <x>696</x>
+     <y>520</y>
+     <width>89</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Close</string>
+   </property>
+  </widget>
+ </widget>
+ <resources>
+  <include location="../res/vshow.qrc"/>
+ </resources>
+ <connections/>
+</ui>

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>GeoCfger</class>
+ <widget class="QFrame" name="GeoCfger">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>480</width>
+    <height>88</height>
+   </rect>
+  </property>
+  <widget class="QSpinBox" name="x">
+   <property name="geometry">
+    <rect>
+     <x>152</x>
+     <y>16</y>
+     <width>73</width>
+     <height>32</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="xTAg">
+   <property name="geometry">
+    <rect>
+     <x>96</x>
+     <y>16</y>
+     <width>49</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>X:</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="QSpinBox" name="width">
+   <property name="geometry">
+    <rect>
+     <x>152</x>
+     <y>56</y>
+     <width>73</width>
+     <height>32</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="yTag">
+   <property name="geometry">
+    <rect>
+     <x>320</x>
+     <y>16</y>
+     <width>73</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Y:</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="heightTag">
+   <property name="geometry">
+    <rect>
+     <x>320</x>
+     <y>56</y>
+     <width>72</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Height:</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="QSpinBox" name="height">
+   <property name="geometry">
+    <rect>
+     <x>400</x>
+     <y>56</y>
+     <width>73</width>
+     <height>32</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QSpinBox" name="y">
+   <property name="geometry">
+    <rect>
+     <x>400</x>
+     <y>16</y>
+     <width>73</width>
+     <height>32</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="widthTag">
+   <property name="geometry">
+    <rect>
+     <x>72</x>
+     <y>56</y>
+     <width>72</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Width:</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

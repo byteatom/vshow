@@ -1,0 +1,470 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ClockCfger</class>
+ <widget class="QFrame" name="ClockCfger">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>480</width>
+    <height>378</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Frame</string>
+  </property>
+  <property name="frameShape">
+   <enum>QFrame::StyledPanel</enum>
+  </property>
+  <property name="frameShadow">
+   <enum>QFrame::Raised</enum>
+  </property>
+  <widget class="QComboBox" name="timeFormat">
+   <property name="geometry">
+    <rect>
+     <x>104</x>
+     <y>161</y>
+     <width>137</width>
+     <height>30</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="week">
+   <property name="geometry">
+    <rect>
+     <x>16</x>
+     <y>120</y>
+     <width>81</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Week:</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="QSpinBox" name="lineSpace">
+   <property name="geometry">
+    <rect>
+     <x>424</x>
+     <y>8</y>
+     <width>48</width>
+     <height>32</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="displayFormatTag">
+   <property name="geometry">
+    <rect>
+     <x>16</x>
+     <y>8</y>
+     <width>81</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Style:</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="displayFormat">
+   <property name="geometry">
+    <rect>
+     <x>104</x>
+     <y>8</y>
+     <width>137</width>
+     <height>30</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="time">
+   <property name="geometry">
+    <rect>
+     <x>16</x>
+     <y>160</y>
+     <width>81</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Time:</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="enabledText">
+   <property name="geometry">
+    <rect>
+     <x>48</x>
+     <y>272</y>
+     <width>57</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="layoutDirection">
+    <enum>Qt::LeftToRight</enum>
+   </property>
+   <property name="text">
+    <string>Text:</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="weekFormat">
+   <property name="geometry">
+    <rect>
+     <x>104</x>
+     <y>121</y>
+     <width>137</width>
+     <height>30</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="spaceTag">
+   <property name="geometry">
+    <rect>
+     <x>328</x>
+     <y>8</y>
+     <width>89</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Space:</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="deltType">
+   <property name="geometry">
+    <rect>
+     <x>104</x>
+     <y>232</y>
+     <width>33</width>
+     <height>30</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit">
+   <property name="geometry">
+    <rect>
+     <x>103</x>
+     <y>273</y>
+     <width>369</width>
+     <height>32</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="dateFormat">
+   <property name="geometry">
+    <rect>
+     <x>104</x>
+     <y>49</y>
+     <width>137</width>
+     <height>30</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="date">
+   <property name="geometry">
+    <rect>
+     <x>16</x>
+     <y>48</y>
+     <width>81</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Date:</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="textAttrTag">
+   <property name="geometry">
+    <rect>
+     <x>18</x>
+     <y>308</y>
+     <width>81</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>TextAttr:</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="bold">
+   <property name="geometry">
+    <rect>
+     <x>102</x>
+     <y>340</y>
+     <width>33</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset resource="../res/vshow.qrc">
+     <normaloff>:/image/text_bold_64.png</normaloff>:/image/text_bold_64.png</iconset>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="underLine">
+   <property name="geometry">
+    <rect>
+     <x>168</x>
+     <y>340</y>
+     <width>33</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset resource="../res/vshow.qrc">
+     <normaloff>:/image/text_underline_64.png</normaloff>:/image/text_underline_64.png</iconset>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="italic">
+   <property name="geometry">
+    <rect>
+     <x>135</x>
+     <y>340</y>
+     <width>33</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset resource="../res/vshow.qrc">
+     <normaloff>:/image/text_italic_64.png</normaloff>:/image/text_italic_64.png</iconset>
+   </property>
+  </widget>
+  <widget class="QFontComboBox" name="dateFont">
+   <property name="geometry">
+    <rect>
+     <x>287</x>
+     <y>48</y>
+     <width>129</width>
+     <height>32</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QFontComboBox" name="weekFont">
+   <property name="geometry">
+    <rect>
+     <x>287</x>
+     <y>120</y>
+     <width>129</width>
+     <height>32</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QFontComboBox" name="timeFont">
+   <property name="geometry">
+    <rect>
+     <x>287</x>
+     <y>160</y>
+     <width>129</width>
+     <height>32</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QFontComboBox" name="textFont">
+   <property name="geometry">
+    <rect>
+     <x>103</x>
+     <y>307</y>
+     <width>138</width>
+     <height>32</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="dateColor">
+   <property name="geometry">
+    <rect>
+     <x>248</x>
+     <y>48</y>
+     <width>33</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset resource="../res/vshow.qrc">
+     <normaloff>:/image/color_text_64.png</normaloff>:/image/color_text_64.png</iconset>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="weekColor">
+   <property name="geometry">
+    <rect>
+     <x>248</x>
+     <y>120</y>
+     <width>33</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset resource="../res/vshow.qrc">
+     <normaloff>:/image/color_text_64.png</normaloff>:/image/color_text_64.png</iconset>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="timeColor">
+   <property name="geometry">
+    <rect>
+     <x>248</x>
+     <y>160</y>
+     <width>33</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset resource="../res/vshow.qrc">
+     <normaloff>:/image/color_text_64.png</normaloff>:/image/color_text_64.png</iconset>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="textColor">
+   <property name="geometry">
+    <rect>
+     <x>248</x>
+     <y>307</y>
+     <width>33</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset resource="../res/vshow.qrc">
+     <normaloff>:/image/color_text_64.png</normaloff>:/image/color_text_64.png</iconset>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="timeUnitFormat">
+   <property name="geometry">
+    <rect>
+     <x>104</x>
+     <y>192</y>
+     <width>137</width>
+     <height>30</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="dateUnitFormat">
+   <property name="geometry">
+    <rect>
+     <x>104</x>
+     <y>80</y>
+     <width>137</width>
+     <height>30</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="wrap">
+   <property name="geometry">
+    <rect>
+     <x>250</x>
+     <y>15</y>
+     <width>121</width>
+     <height>19</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Multi Line</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="time_2">
+   <property name="geometry">
+    <rect>
+     <x>16</x>
+     <y>232</y>
+     <width>81</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Time Offset:</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="QSpinBox" name="dateFontSize">
+   <property name="geometry">
+    <rect>
+     <x>424</x>
+     <y>48</y>
+     <width>48</width>
+     <height>32</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QSpinBox" name="weekFontSize">
+   <property name="geometry">
+    <rect>
+     <x>424</x>
+     <y>120</y>
+     <width>48</width>
+     <height>32</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QSpinBox" name="timeFontSize">
+   <property name="geometry">
+    <rect>
+     <x>424</x>
+     <y>160</y>
+     <width>48</width>
+     <height>32</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QTimeEdit" name="deltTime">
+   <property name="geometry">
+    <rect>
+     <x>144</x>
+     <y>232</y>
+     <width>137</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="displayFormat">
+    <string>HH:mm:ss</string>
+   </property>
+  </widget>
+  <widget class="QSpinBox" name="textFontSize">
+   <property name="geometry">
+    <rect>
+     <x>287</x>
+     <y>307</y>
+     <width>48</width>
+     <height>32</height>
+    </rect>
+   </property>
+  </widget>
+ </widget>
+ <resources>
+  <include location="../res/vshow.qrc"/>
+ </resources>
+ <connections/>
+</ui>

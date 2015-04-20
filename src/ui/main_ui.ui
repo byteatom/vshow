@@ -1,0 +1,514 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainUi</class>
+ <widget class="QMainWindow" name="MainUi">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>918</width>
+    <height>724</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>V Show</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QHBoxLayout" name="horizontalLayout" stretch="1,2">
+    <property name="spacing">
+     <number>8</number>
+    </property>
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+    <item>
+     <widget class="QTreeWidget" name="projectTree">
+      <property name="selectionMode">
+       <enum>QAbstractItemView::ExtendedSelection</enum>
+      </property>
+      <property name="selectionBehavior">
+       <enum>QAbstractItemView::SelectItems</enum>
+      </property>
+      <attribute name="headerVisible">
+       <bool>false</bool>
+      </attribute>
+      <column>
+       <property name="text">
+        <string notr="true">1</string>
+       </property>
+      </column>
+     </widget>
+    </item>
+    <item>
+     <widget class="QFrame" name="attr">
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Sunken</enum>
+      </property>
+      <layout class="QVBoxLayout" name="layout">
+       <property name="spacing">
+        <number>0</number>
+       </property>
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>918</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="newAct"/>
+    <addaction name="openAct"/>
+    <addaction name="saveAct"/>
+    <addaction name="saveAsAct"/>
+    <addaction name="separator"/>
+    <addaction name="exitAct"/>
+   </widget>
+   <widget class="QMenu" name="menuAdd">
+    <property name="title">
+     <string>Add</string>
+    </property>
+    <addaction name="screenAct"/>
+    <addaction name="programAct"/>
+    <addaction name="regionAct"/>
+    <addaction name="separator"/>
+    <addaction name="textAct"/>
+    <addaction name="pictureAct"/>
+    <addaction name="videoAct"/>
+    <addaction name="watchAct"/>
+    <addaction name="clockAct"/>
+    <addaction name="timerAct"/>
+    <addaction name="officeAct"/>
+   </widget>
+   <widget class="QMenu" name="menuPlay">
+    <property name="title">
+     <string>Play</string>
+    </property>
+    <addaction name="playAllAct"/>
+   </widget>
+   <widget class="QMenu" name="menuLanguage">
+    <property name="title">
+     <string>Language</string>
+    </property>
+    <addaction name="zhcnAct"/>
+    <addaction name="zhtwAct"/>
+    <addaction name="separator"/>
+    <addaction name="engbAct"/>
+   </widget>
+   <widget class="QMenu" name="menuHelp">
+    <property name="title">
+     <string>Help</string>
+    </property>
+    <addaction name="contextHelpAct"/>
+    <addaction name="aboutAct"/>
+   </widget>
+   <widget class="QMenu" name="menuOption">
+    <property name="title">
+     <string>Option</string>
+    </property>
+    <addaction name="cardAct"/>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menuAdd"/>
+   <addaction name="menuPlay"/>
+   <addaction name="menuOption"/>
+   <addaction name="menuLanguage"/>
+   <addaction name="menuHelp"/>
+  </widget>
+  <widget class="QToolBar" name="toolBarAdd">
+   <property name="windowTitle">
+    <string>Add Toolbar</string>
+   </property>
+   <property name="movable">
+    <bool>true</bool>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>48</width>
+     <height>48</height>
+    </size>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="screenAct"/>
+   <addaction name="programAct"/>
+   <addaction name="regionAct"/>
+   <addaction name="separator"/>
+   <addaction name="videoAct"/>
+   <addaction name="pictureAct"/>
+   <addaction name="textAct"/>
+   <addaction name="watchAct"/>
+   <addaction name="clockAct"/>
+   <addaction name="timerAct"/>
+   <addaction name="officeAct"/>
+  </widget>
+  <widget class="QStatusBar" name="statusBar">
+   <property name="sizeGripEnabled">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QToolBar" name="toolBarMisc">
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="windowTitle">
+    <string>Misc ToolBar</string>
+   </property>
+   <property name="movable">
+    <bool>false</bool>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>48</width>
+     <height>48</height>
+    </size>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="delAct"/>
+   <addaction name="separator"/>
+   <addaction name="cardAct"/>
+   <addaction name="separator"/>
+   <addaction name="playAllAct"/>
+   <addaction name="stopAllAct"/>
+  </widget>
+  <action name="newAct">
+   <property name="text">
+    <string>New</string>
+   </property>
+   <property name="toolTip">
+    <string>New project</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+N</string>
+   </property>
+  </action>
+  <action name="openAct">
+   <property name="text">
+    <string>Open...</string>
+   </property>
+   <property name="toolTip">
+    <string>Open project</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+O</string>
+   </property>
+  </action>
+  <action name="saveAct">
+   <property name="text">
+    <string>Save</string>
+   </property>
+   <property name="toolTip">
+    <string>Save project</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+S</string>
+   </property>
+  </action>
+  <action name="saveAsAct">
+   <property name="text">
+    <string>Save As...</string>
+   </property>
+   <property name="toolTip">
+    <string>Save project to another file</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Shift+S</string>
+   </property>
+  </action>
+  <action name="exitAct">
+   <property name="text">
+    <string>Exit</string>
+   </property>
+   <property name="toolTip">
+    <string>Exit application</string>
+   </property>
+  </action>
+  <action name="screenAct">
+   <property name="icon">
+    <iconset resource="../res/vshow.qrc">
+     <normaloff>:/image/add_screen_64.png</normaloff>:/image/add_screen_64.png</iconset>
+   </property>
+   <property name="text">
+    <string>Screen</string>
+   </property>
+   <property name="toolTip">
+    <string>Add screen</string>
+   </property>
+  </action>
+  <action name="programAct">
+   <property name="icon">
+    <iconset resource="../res/vshow.qrc">
+     <normaloff>:/image/add_program_64.png</normaloff>:/image/add_program_64.png</iconset>
+   </property>
+   <property name="text">
+    <string>Program</string>
+   </property>
+   <property name="toolTip">
+    <string>Add program</string>
+   </property>
+  </action>
+  <action name="regionAct">
+   <property name="icon">
+    <iconset resource="../res/vshow.qrc">
+     <normaloff>:/image/add_region_64.png</normaloff>:/image/add_region_64.png</iconset>
+   </property>
+   <property name="text">
+    <string>Region</string>
+   </property>
+   <property name="toolTip">
+    <string>Add region</string>
+   </property>
+  </action>
+  <action name="textAct">
+   <property name="icon">
+    <iconset resource="../res/vshow.qrc">
+     <normaloff>:/image/add_text_64.png</normaloff>:/image/add_text_64.png</iconset>
+   </property>
+   <property name="text">
+    <string>Text</string>
+   </property>
+   <property name="toolTip">
+    <string>Add text</string>
+   </property>
+  </action>
+  <action name="pictureAct">
+   <property name="icon">
+    <iconset resource="../res/vshow.qrc">
+     <normaloff>:/image/add_picture_64.png</normaloff>:/image/add_picture_64.png</iconset>
+   </property>
+   <property name="text">
+    <string>Picture</string>
+   </property>
+   <property name="toolTip">
+    <string>Add picture</string>
+   </property>
+  </action>
+  <action name="videoAct">
+   <property name="icon">
+    <iconset resource="../res/vshow.qrc">
+     <normaloff>:/image/add_video_64.png</normaloff>:/image/add_video_64.png</iconset>
+   </property>
+   <property name="text">
+    <string>Video</string>
+   </property>
+   <property name="toolTip">
+    <string>Add video</string>
+   </property>
+  </action>
+  <action name="playAllAct">
+   <property name="icon">
+    <iconset resource="../res/vshow.qrc">
+     <normaloff>:/image/play_64.png</normaloff>:/image/play_64.png</iconset>
+   </property>
+   <property name="text">
+    <string>Play</string>
+   </property>
+   <property name="toolTip">
+    <string>Play all screen</string>
+   </property>
+  </action>
+  <action name="delAct">
+   <property name="icon">
+    <iconset resource="../res/vshow.qrc">
+     <normaloff>:/image/delete_64.png</normaloff>
+     <activeoff>:/image/delete_active_off_64.png</activeoff>:/image/delete_64.png</iconset>
+   </property>
+   <property name="text">
+    <string>Delete</string>
+   </property>
+   <property name="toolTip">
+    <string>Delete</string>
+   </property>
+  </action>
+  <action name="cardAct">
+   <property name="icon">
+    <iconset resource="../res/vshow.qrc">
+     <normaloff>:/image/card_64.png</normaloff>:/image/card_64.png</iconset>
+   </property>
+   <property name="text">
+    <string>Card</string>
+   </property>
+   <property name="toolTip">
+    <string>Card configuration</string>
+   </property>
+  </action>
+  <action name="stopAllAct">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="../res/vshow.qrc">
+     <normaloff>:/image/stop_64.png</normaloff>:/image/stop_64.png</iconset>
+   </property>
+   <property name="text">
+    <string>Stop</string>
+   </property>
+   <property name="toolTip">
+    <string>Stop all playing screen</string>
+   </property>
+  </action>
+  <action name="moveUpAct">
+   <property name="text">
+    <string>Move Up</string>
+   </property>
+   <property name="toolTip">
+    <string>Move up</string>
+   </property>
+  </action>
+  <action name="moveDownAct">
+   <property name="text">
+    <string>Move Down</string>
+   </property>
+   <property name="toolTip">
+    <string>Move down</string>
+   </property>
+  </action>
+  <action name="watchAct">
+   <property name="icon">
+    <iconset resource="../res/vshow.qrc">
+     <normaloff>:/image/add_watch_64.png</normaloff>:/image/add_watch_64.png</iconset>
+   </property>
+   <property name="text">
+    <string>Watch</string>
+   </property>
+   <property name="toolTip">
+    <string>Add watch</string>
+   </property>
+  </action>
+  <action name="clockAct">
+   <property name="icon">
+    <iconset resource="../res/vshow.qrc">
+     <normaloff>:/image/add_clock_64.png</normaloff>:/image/add_clock_64.png</iconset>
+   </property>
+   <property name="text">
+    <string>Clock</string>
+   </property>
+   <property name="toolTip">
+    <string>Add clock</string>
+   </property>
+  </action>
+  <action name="timerAct">
+   <property name="icon">
+    <iconset resource="../res/vshow.qrc">
+     <normaloff>:/image/add_timer_64.png</normaloff>:/image/add_timer_64.png</iconset>
+   </property>
+   <property name="text">
+    <string>Timer</string>
+   </property>
+   <property name="toolTip">
+    <string>Add timer</string>
+   </property>
+  </action>
+  <action name="officeAct">
+   <property name="icon">
+    <iconset resource="../res/vshow.qrc">
+     <normaloff>:/image/add_office_64.png</normaloff>:/image/add_office_64.png</iconset>
+   </property>
+   <property name="text">
+    <string>Office</string>
+   </property>
+   <property name="toolTip">
+    <string>Add office</string>
+   </property>
+  </action>
+  <action name="expandAllAct">
+   <property name="text">
+    <string>Expand All</string>
+   </property>
+   <property name="toolTip">
+    <string>Expand all</string>
+   </property>
+  </action>
+  <action name="collapseAllAct">
+   <property name="text">
+    <string>Collapse All</string>
+   </property>
+   <property name="toolTip">
+    <string>Collapse all</string>
+   </property>
+  </action>
+  <action name="zhcnAct">
+   <property name="text">
+    <string>Chinese Simplified</string>
+   </property>
+   <property name="toolTip">
+    <string>Chinese Simplified</string>
+   </property>
+  </action>
+  <action name="engbAct">
+   <property name="text">
+    <string>English</string>
+   </property>
+  </action>
+  <action name="contextHelpAct">
+   <property name="text">
+    <string>Context  Help</string>
+   </property>
+  </action>
+  <action name="aboutAct">
+   <property name="text">
+    <string>About  VShow...</string>
+   </property>
+  </action>
+  <action name="zhtwAct">
+   <property name="text">
+    <string>Chinese Traditional</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="../res/vshow.qrc"/>
+ </resources>
+ <connections/>
+ <slots>
+  <slot>addScreen()</slot>
+  <slot>addProgram()</slot>
+  <slot>addText()</slot>
+ </slots>
+</ui>

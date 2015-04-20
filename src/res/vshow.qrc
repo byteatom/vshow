@@ -1,0 +1,47 @@
+<RCC>
+    <qresource prefix="/image">
+        <file>link0.png</file>
+        <file>link1.png</file>
+        <file>link2.png</file>
+        <file>link3.png</file>
+        <file>link4.png</file>
+        <file>link5.png</file>
+        <file>link6.png</file>
+        <file>link7.png</file>
+        <file>link8.png</file>
+        <file>add_clock_64.png</file>
+        <file>add_office_64.png</file>
+        <file>add_picture_64.png</file>
+        <file>add_program_64.png</file>
+        <file>add_region_64.png</file>
+        <file>add_screen_64.png</file>
+        <file>add_text_64.png</file>
+        <file>add_timer_64.png</file>
+        <file>add_video_64.png</file>
+        <file>add_watch_64.png</file>
+        <file>card_64.png</file>
+        <file>color_background_64.png</file>
+        <file>color_text_64.png</file>
+        <file>delete_64.png</file>
+        <file>open_file_64.png</file>
+        <file>play_64.png</file>
+        <file>stop_64.png</file>
+        <file>text_background_color_64.png</file>
+        <file>text_bold_64.png</file>
+        <file>text_center_64.png</file>
+        <file>text_forground_color_64.png</file>
+        <file>text_italic_64.png</file>
+        <file>text_justify_64.png</file>
+        <file>text_left_64.png</file>
+        <file>text_right_64.png</file>
+        <file>text_underline_64.png</file>
+        <file>text_wrap_64.png</file>
+        <file>video_pause_64.png</file>
+        <file>video_play_64.png</file>
+        <file>video_stop_64.png</file>
+        <file>delete_active_off_64.png</file>
+        <file>scan_add_64.png</file>
+        <file>scan_delete_64.png</file>
+        <file>scan_edit_64.png</file>
+    </qresource>
+</RCC>

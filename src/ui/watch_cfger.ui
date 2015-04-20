@@ -1,0 +1,738 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>WatchCfger</class>
+ <widget class="QFrame" name="WatchCfger">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>480</width>
+    <height>459</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Frame</string>
+  </property>
+  <property name="frameShape">
+   <enum>QFrame::StyledPanel</enum>
+  </property>
+  <property name="frameShadow">
+   <enum>QFrame::Raised</enum>
+  </property>
+  <widget class="QLabel" name="dialStyleTag">
+   <property name="geometry">
+    <rect>
+     <x>16</x>
+     <y>6</y>
+     <width>129</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Style:</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="hourPointTag">
+   <property name="geometry">
+    <rect>
+     <x>16</x>
+     <y>142</y>
+     <width>129</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Hour Dot:</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="tsnPointTag">
+   <property name="geometry">
+    <rect>
+     <x>16</x>
+     <y>110</y>
+     <width>129</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>TSN Dot:</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="minutePointTag">
+   <property name="geometry">
+    <rect>
+     <x>16</x>
+     <y>174</y>
+     <width>129</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Minute Dot:</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="hourHandTag">
+   <property name="geometry">
+    <rect>
+     <x>16</x>
+     <y>209</y>
+     <width>129</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Hour Hand:</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="secondHandTag">
+   <property name="geometry">
+    <rect>
+     <x>16</x>
+     <y>273</y>
+     <width>129</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Second Hand:</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="minuteHandTag">
+   <property name="geometry">
+    <rect>
+     <x>16</x>
+     <y>241</y>
+     <width>129</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Minute Hand:</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="dialStyle">
+   <property name="geometry">
+    <rect>
+     <x>152</x>
+     <y>7</y>
+     <width>129</width>
+     <height>30</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="hourPointStyle">
+   <property name="geometry">
+    <rect>
+     <x>152</x>
+     <y>143</y>
+     <width>96</width>
+     <height>30</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="tsnPointStyle">
+   <property name="geometry">
+    <rect>
+     <x>152</x>
+     <y>111</y>
+     <width>96</width>
+     <height>30</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="minutePointStyle">
+   <property name="geometry">
+    <rect>
+     <x>152</x>
+     <y>175</y>
+     <width>96</width>
+     <height>30</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QSpinBox" name="hourPointSize">
+   <property name="geometry">
+    <rect>
+     <x>288</x>
+     <y>142</y>
+     <width>48</width>
+     <height>32</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QSpinBox" name="tsnPointSize">
+   <property name="geometry">
+    <rect>
+     <x>288</x>
+     <y>110</y>
+     <width>48</width>
+     <height>32</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QSpinBox" name="minutePointSize">
+   <property name="geometry">
+    <rect>
+     <x>288</x>
+     <y>174</y>
+     <width>48</width>
+     <height>32</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QSpinBox" name="hourHandSize">
+   <property name="geometry">
+    <rect>
+     <x>288</x>
+     <y>209</y>
+     <width>48</width>
+     <height>32</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QSpinBox" name="secondHandSize">
+   <property name="geometry">
+    <rect>
+     <x>288</x>
+     <y>273</y>
+     <width>48</width>
+     <height>32</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QSpinBox" name="minuteHandSize">
+   <property name="geometry">
+    <rect>
+     <x>288</x>
+     <y>241</y>
+     <width>48</width>
+     <height>32</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QSpinBox" name="hourNumFontSize">
+   <property name="geometry">
+    <rect>
+     <x>424</x>
+     <y>75</y>
+     <width>48</width>
+     <height>32</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QSpinBox" name="tsnNumFontSize">
+   <property name="geometry">
+    <rect>
+     <x>424</x>
+     <y>43</y>
+     <width>48</width>
+     <height>32</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="hourHandStyle">
+   <property name="geometry">
+    <rect>
+     <x>152</x>
+     <y>210</y>
+     <width>96</width>
+     <height>30</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="secondHandStyle">
+   <property name="geometry">
+    <rect>
+     <x>152</x>
+     <y>274</y>
+     <width>96</width>
+     <height>30</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="minuteHandStyle">
+   <property name="geometry">
+    <rect>
+     <x>152</x>
+     <y>242</y>
+     <width>96</width>
+     <height>30</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="hourNumStyle">
+   <property name="geometry">
+    <rect>
+     <x>176</x>
+     <y>76</y>
+     <width>72</width>
+     <height>30</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="tsnNumStyle">
+   <property name="geometry">
+    <rect>
+     <x>176</x>
+     <y>44</y>
+     <width>72</width>
+     <height>30</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="enabledText">
+   <property name="geometry">
+    <rect>
+     <x>80</x>
+     <y>344</y>
+     <width>65</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Text:</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="timeDiff">
+   <property name="geometry">
+    <rect>
+     <x>16</x>
+     <y>310</y>
+     <width>129</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Time Offset:</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit">
+   <property name="geometry">
+    <rect>
+     <x>151</x>
+     <y>347</y>
+     <width>209</width>
+     <height>32</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="deltType">
+   <property name="geometry">
+    <rect>
+     <x>152</x>
+     <y>310</y>
+     <width>33</width>
+     <height>30</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="italic">
+   <property name="geometry">
+    <rect>
+     <x>184</x>
+     <y>424</y>
+     <width>32</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset resource="../res/vshow.qrc">
+     <normaloff>:/image/text_italic_64.png</normaloff>:/image/text_italic_64.png</iconset>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="bold">
+   <property name="geometry">
+    <rect>
+     <x>152</x>
+     <y>424</y>
+     <width>32</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset resource="../res/vshow.qrc">
+     <normaloff>:/image/text_bold_64.png</normaloff>:/image/text_bold_64.png</iconset>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="underLine">
+   <property name="geometry">
+    <rect>
+     <x>216</x>
+     <y>424</y>
+     <width>32</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset resource="../res/vshow.qrc">
+     <normaloff>:/image/text_underline_64.png</normaloff>:/image/text_underline_64.png</iconset>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="down">
+   <property name="geometry">
+    <rect>
+     <x>408</x>
+     <y>416</y>
+     <width>32</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Down</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="left">
+   <property name="geometry">
+    <rect>
+     <x>376</x>
+     <y>384</y>
+     <width>32</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>&lt;-</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="right">
+   <property name="geometry">
+    <rect>
+     <x>440</x>
+     <y>384</y>
+     <width>32</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>-&gt;</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="center">
+   <property name="geometry">
+    <rect>
+     <x>408</x>
+     <y>384</y>
+     <width>32</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>*</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="up">
+   <property name="geometry">
+    <rect>
+     <x>408</x>
+     <y>352</y>
+     <width>32</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Up</string>
+   </property>
+  </widget>
+  <widget class="QFontComboBox" name="hourNumFont">
+   <property name="geometry">
+    <rect>
+     <x>287</x>
+     <y>75</y>
+     <width>129</width>
+     <height>32</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QFontComboBox" name="tsnNumFont">
+   <property name="geometry">
+    <rect>
+     <x>287</x>
+     <y>43</y>
+     <width>129</width>
+     <height>32</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QFontComboBox" name="textFont">
+   <property name="geometry">
+    <rect>
+     <x>152</x>
+     <y>384</y>
+     <width>129</width>
+     <height>32</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="hourPointColor">
+   <property name="geometry">
+    <rect>
+     <x>248</x>
+     <y>142</y>
+     <width>33</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset resource="../res/vshow.qrc">
+     <normaloff>:/image/color_background_64.png</normaloff>:/image/color_background_64.png</iconset>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="tsnPointColor">
+   <property name="geometry">
+    <rect>
+     <x>248</x>
+     <y>110</y>
+     <width>33</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset resource="../res/vshow.qrc">
+     <normaloff>:/image/color_background_64.png</normaloff>:/image/color_background_64.png</iconset>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="minutePointColor">
+   <property name="geometry">
+    <rect>
+     <x>248</x>
+     <y>174</y>
+     <width>33</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset resource="../res/vshow.qrc">
+     <normaloff>:/image/color_background_64.png</normaloff>:/image/color_background_64.png</iconset>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="hourHandColor">
+   <property name="geometry">
+    <rect>
+     <x>248</x>
+     <y>209</y>
+     <width>33</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset resource="../res/vshow.qrc">
+     <normaloff>:/image/color_background_64.png</normaloff>:/image/color_background_64.png</iconset>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="secondHandColor">
+   <property name="geometry">
+    <rect>
+     <x>248</x>
+     <y>273</y>
+     <width>33</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset resource="../res/vshow.qrc">
+     <normaloff>:/image/color_background_64.png</normaloff>:/image/color_background_64.png</iconset>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="minuteHandColor">
+   <property name="geometry">
+    <rect>
+     <x>248</x>
+     <y>241</y>
+     <width>33</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset resource="../res/vshow.qrc">
+     <normaloff>:/image/color_background_64.png</normaloff>:/image/color_background_64.png</iconset>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="hourNumColor">
+   <property name="geometry">
+    <rect>
+     <x>248</x>
+     <y>75</y>
+     <width>33</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset resource="../res/vshow.qrc">
+     <normaloff>:/image/color_text_64.png</normaloff>:/image/color_text_64.png</iconset>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="tsnNumColor">
+   <property name="geometry">
+    <rect>
+     <x>248</x>
+     <y>43</y>
+     <width>33</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset resource="../res/vshow.qrc">
+     <normaloff>:/image/color_text_64.png</normaloff>:/image/color_text_64.png</iconset>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="textColor">
+   <property name="geometry">
+    <rect>
+     <x>248</x>
+     <y>424</y>
+     <width>32</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset resource="../res/vshow.qrc">
+     <normaloff>:/image/color_text_64.png</normaloff>:/image/color_text_64.png</iconset>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="hourNumDisplay">
+   <property name="geometry">
+    <rect>
+     <x>152</x>
+     <y>75</y>
+     <width>17</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="tsnNumDisplay">
+   <property name="geometry">
+    <rect>
+     <x>152</x>
+     <y>43</y>
+     <width>17</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="hourPointTag_2">
+   <property name="geometry">
+    <rect>
+     <x>16</x>
+     <y>43</y>
+     <width>129</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>TSN Number:</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="hourPointTag_3">
+   <property name="geometry">
+    <rect>
+     <x>16</x>
+     <y>75</y>
+     <width>129</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Hour Number:</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="QTimeEdit" name="deltTime">
+   <property name="geometry">
+    <rect>
+     <x>200</x>
+     <y>310</y>
+     <width>137</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="displayFormat">
+    <string>HH:mm:ss</string>
+   </property>
+  </widget>
+  <widget class="QSpinBox" name="textFontSize">
+   <property name="geometry">
+    <rect>
+     <x>296</x>
+     <y>384</y>
+     <width>65</width>
+     <height>32</height>
+    </rect>
+   </property>
+  </widget>
+ </widget>
+ <resources>
+  <include location="../res/vshow.qrc"/>
+ </resources>
+ <connections/>
+</ui>
