@@ -497,7 +497,7 @@ void CardUi::setIoUi(bool enable)
 
 void CardUi::adjustFreq(RecverCard *recver)
 {
-	int ret = recver->adjustFreq();
+	recver->adjustFreq();
 	currentCardChanged(ui->cards->currentItem(), nullptr);
 }
 

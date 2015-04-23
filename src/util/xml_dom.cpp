@@ -1,6 +1,7 @@
 #include "xml_dom.h"
 
 #include <cassert>
+#include <fstream>
 
 #include <xercesc/util/PlatformUtils.hpp>
 #include <xercesc/framework/LocalFileFormatTarget.hpp>
@@ -59,14 +60,22 @@ XmlDom::~XmlDom()
 
 Xml::Doc* XmlDom::load(const XMLCh *file)
 {
-    DOMImplementationLS *lsImpl = DOMImplementationRegistry::getDOMImplementation(XmlStr("LS"));
-    DOMLSParser* parser = lsImpl->createLSParser(DOMImplementationLS::MODE_SYNCHRONOUS, 0);
-    xml_release_guard(DOMLSParser, parser);
-    parser->getDomConfig()->setParameter(XMLUni::fgDOMErrorHandler, &errorHandler);
-    Xml::Doc *docTmp = parser->parseURI(file);
-    if (nullptr == docTmp) return nullptr;
-    doc = static_cast<Xml::Doc *>(docTmp->cloneNode(true));
-    return doc;
+    {
+        std::ifstream ifs((const char*)XmlStr(file));
+        if (!ifs.good()) return nullptr;
+    }
+    try {
+        DOMImplementationLS *lsImpl = DOMImplementationRegistry::getDOMImplementation(XmlStr("LS"));
+        DOMLSParser* parser = lsImpl->createLSParser(DOMImplementationLS::MODE_SYNCHRONOUS, 0);
+        xml_release_guard(DOMLSParser, parser);
+        parser->getDomConfig()->setParameter(XMLUni::fgDOMErrorHandler, &errorHandler);
+        Xml::Doc *docTmp = parser->parseURI(file);
+        if (nullptr == docTmp) return nullptr;
+        doc = static_cast<Xml::Doc *>(docTmp->cloneNode(true));
+        return doc;
+    } catch (...) {
+        return nullptr;
+    }
 }
 
 Xml::Doc* XmlDom::create(const XMLCh *name)

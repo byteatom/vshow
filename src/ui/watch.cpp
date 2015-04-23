@@ -26,7 +26,7 @@ Watch::Watch(Region *owner, QTreeWidgetItem *treeItem)
 	attr_ = new WatchAttr{owner->attr()};
 	view_ = new WatchView{this};
 	init(this->attr(), this->view());
-	this->attr()->name = MainUi::tr("Watch %1")
+	this->attr()->name = Watch::tr("Watch %1")
 							 .arg(owner->attr()->nextChildNum)
 							 .toStdWString();
 	this->attr()->dial.addObserver(
@@ -87,6 +87,8 @@ void Watch::cacheView() {
 void Watch::play() {
 	pulses = TICK_PER_SEC;
 	seconds = 0;
+	cacheView();
+	updateView();
 	Slice::play();
 }
 
@@ -110,11 +112,14 @@ void Watch::pulse() {
 		return;
 	} else {
 		pulses = TICK_PER_SEC;
-		/*++seconds;
+		++seconds;
 		if (5 == seconds) {
-			end();
-			return;
-		}*/
+			if (owner->organs.size() > 1) {
+				end();
+				return;
+			} else
+				seconds = 0;
+		}
 		QPixmap *preCache = cache;
 		QPixmap *newCache = frame.fetchAndStoreOrdered(nullptr);
 		if (newCache) {

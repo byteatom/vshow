@@ -9,42 +9,41 @@
 #include "animator.h"
 
 class Picture : public Segment {
-    Q_DECLARE_TR_FUNCTIONS(Picture)
-
+	Q_DECLARE_TR_FUNCTIONS(Picture)
 public:
-    static const SliceTypeId typeId;
-    static const QString fileFilter;
-    static const QString fileTitle;
+	static const SliceTypeId typeId;
+	static const QString fileFilter;
+	static const QString fileTitle;
 
-    Picture(Region *owner, QTreeWidgetItem *treeItem, PictureAttr *attr);
-    Picture(Region *owner, QTreeWidgetItem *treeItem);
-    virtual ~Picture();
+	Picture(Region *owner, QTreeWidgetItem *treeItem, PictureAttr *attr);
+	Picture(Region *owner, QTreeWidgetItem *treeItem);
+	virtual ~Picture();
 
-    virtual void showCfgers() override;
-    virtual void hideCfgers() override;
+	virtual void showCfgers() override;
+	virtual void hideCfgers() override;
 
-    void fileChanged(std::wstring &path);
-    void scaleChanged(ImageTool::Scale &scale);
+	void fileChanged(std::wstring &path);
+	void scaleChanged(ImageTool::Scale &scale);
 
-    virtual void cacheView() override;
+	virtual void cacheView() override;
 
-    virtual void start() override;
-    virtual void play() override;
-    void makeFrame();
-    virtual void pulse() override;
-    virtual void end() override;
-    virtual void stop() override;
-    PictureAttr *attr();
-    PictureView *view();
+	virtual void start() override;
+	virtual void play() override;
+	void makeFrame();
+	virtual void pulse() override;
+	virtual void end() override;
+	virtual void stop() override;
+	PictureAttr *attr();
+	PictureView *view();
 
-    QPixmap cache;
+	QPixmap cache;
 
-    unsigned int pulses;
-    QPixmap origin;
-    QPixmap frame;
-    Animator animator;
-    QTimer stayTimer;
-    Task task;
+	unsigned int pulses;
+	QPixmap origin;
+	QPixmap frame;
+	Animator animator;
+	QTimer stayTimer;
+	Task task;
 };
 
 #endif    // PICTURE_H

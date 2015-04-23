@@ -595,21 +595,11 @@ void MainUi::langZhTw() {
 }
 
 void MainUi::langEnGb() {
-	QLocale britain(QLocale::English, QLocale::UnitedKingdom);
-	QString appDir = QCoreApplication::applicationDirPath();
-	QString languageFileDir = appDir + "/" + LANGUAGE_DIR + LANGUAGE_PREFIX
-							  + britain.name() + LANGUAGE_SUFFIX;
+	Data::obj->appAttr->language = QLocale(QLocale::English, QLocale::UnitedStates).name().toStdWString();
 	QMessageBox msg;
-	if (QFile::exists(languageFileDir)) {
-		Data::obj->appAttr->language = britain.name().toStdWString();
-		msg.setText(tr("Language has been switched to English."));
-		msg.setInformativeText(tr("Please restart the application!"));
-		msg.setStandardButtons(QMessageBox::Ok | QMessageBox::Cancel);
-	} else {
-		msg.setText(tr("Language dones't switch to English."));
-		msg.setInformativeText(languageFileDir + tr("dones't exist!"));
-		msg.setStandardButtons(QMessageBox::Ok | QMessageBox::Cancel);
-	}
+	msg.setText(tr("Language has been switched to English."));
+	msg.setInformativeText(tr("Please restart the application!"));
+	msg.setStandardButtons(QMessageBox::Ok | QMessageBox::Cancel);
 	msg.exec();
 }
 

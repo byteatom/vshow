@@ -25,7 +25,7 @@ Clock::Clock(Region *owner, QTreeWidgetItem *treeItem)
 	attr_ = new ClockAttr{owner->attr()};
 	view_ = new ClockView{this};
 	init(this->attr(), this->view());
-	this->attr()->name = MainUi::tr("Clock %1")
+	this->attr()->name = Clock::tr("Clock %1")
 							 .arg(owner->attr()->nextChildNum)
 							 .toStdWString();
 	this->attr()->clock.addObserver(
@@ -86,6 +86,8 @@ void Clock::cacheView() {
 void Clock::play() {
 	pulses = TICK_PER_SEC;
 	seconds = 0;
+	cacheView();
+	updateView();
 	Slice::play();
 }
 
@@ -117,11 +119,14 @@ void Clock::pulse() {
 		return;
 	} else {
 		pulses = TICK_PER_SEC;
-		/*++seconds;
+		++seconds;
 		if (5 == seconds) {
-			end();
-			return;
-		}*/
+			if (owner->organs.size() > 1) {
+				end();
+				return;
+			} else
+				seconds = 0;
+		}
 		QPixmap *preCache = cache;
 		QPixmap *newCache = frame.fetchAndStoreOrdered(nullptr);
 		if (newCache) {

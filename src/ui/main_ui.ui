@@ -123,10 +123,9 @@
     <property name="title">
      <string>Language</string>
     </property>
+    <addaction name="engbAct"/>
     <addaction name="zhcnAct"/>
     <addaction name="zhtwAct"/>
-    <addaction name="separator"/>
-    <addaction name="engbAct"/>
    </widget>
    <widget class="QMenu" name="menuHelp">
     <property name="title">

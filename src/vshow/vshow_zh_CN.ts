@@ -418,6 +418,11 @@
         <source>Images (*.bmp *.jpg *.png)</source>
         <translation>图片文件 (*.bmp *.jpg *.png)</translation>
     </message>
+    <message>
+        <location filename="../ui/clock.cpp" line="28"/>
+        <source>Clock %1</source>
+        <translation>时钟 %1</translation>
+    </message>
 </context>
 <context>
     <name>ClockCfger</name>
@@ -731,7 +736,7 @@
     </message>
     <message>
         <location filename="../ui/main_ui.ui" line="118"/>
-        <location filename="../ui/main_ui.ui" line="349"/>
+        <location filename="../ui/main_ui.ui" line="348"/>
         <source>Play</source>
         <translation>播放</translation>
     </message>
@@ -741,296 +746,291 @@
         <translation>语言</translation>
     </message>
     <message>
-        <location filename="../ui/main_ui.ui" line="133"/>
+        <location filename="../ui/main_ui.ui" line="132"/>
         <source>Help</source>
         <translation>帮助</translation>
     </message>
     <message>
-        <location filename="../ui/main_ui.ui" line="140"/>
+        <location filename="../ui/main_ui.ui" line="139"/>
         <source>Option</source>
         <translation>配置</translation>
     </message>
     <message>
-        <location filename="../ui/main_ui.ui" line="153"/>
+        <location filename="../ui/main_ui.ui" line="152"/>
         <source>Add Toolbar</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../ui/main_ui.ui" line="195"/>
+        <location filename="../ui/main_ui.ui" line="194"/>
         <source>Misc ToolBar</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../ui/main_ui.ui" line="221"/>
+        <location filename="../ui/main_ui.ui" line="220"/>
         <source>New</source>
         <translation>新建</translation>
     </message>
     <message>
-        <location filename="../ui/main_ui.ui" line="224"/>
+        <location filename="../ui/main_ui.ui" line="223"/>
         <source>New project</source>
         <translation>新建工程</translation>
     </message>
     <message>
-        <location filename="../ui/main_ui.ui" line="227"/>
+        <location filename="../ui/main_ui.ui" line="226"/>
         <source>Ctrl+N</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../ui/main_ui.ui" line="232"/>
+        <location filename="../ui/main_ui.ui" line="231"/>
         <source>Open...</source>
         <translation>打开...</translation>
     </message>
     <message>
-        <location filename="../ui/main_ui.ui" line="235"/>
+        <location filename="../ui/main_ui.ui" line="234"/>
         <source>Open project</source>
         <translation>打开工程</translation>
     </message>
     <message>
-        <location filename="../ui/main_ui.ui" line="238"/>
+        <location filename="../ui/main_ui.ui" line="237"/>
         <source>Ctrl+O</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../ui/main_ui.ui" line="243"/>
+        <location filename="../ui/main_ui.ui" line="242"/>
         <source>Save</source>
         <translation>保存</translation>
     </message>
     <message>
-        <location filename="../ui/main_ui.ui" line="246"/>
+        <location filename="../ui/main_ui.ui" line="245"/>
         <source>Save project</source>
         <translation>保存工程</translation>
     </message>
     <message>
-        <location filename="../ui/main_ui.ui" line="249"/>
+        <location filename="../ui/main_ui.ui" line="248"/>
         <source>Ctrl+S</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../ui/main_ui.ui" line="254"/>
+        <location filename="../ui/main_ui.ui" line="253"/>
         <source>Save As...</source>
         <translation>另存为...</translation>
     </message>
     <message>
-        <location filename="../ui/main_ui.ui" line="257"/>
+        <location filename="../ui/main_ui.ui" line="256"/>
         <source>Save project to another file</source>
         <translation>另存为其它文件</translation>
     </message>
     <message>
-        <location filename="../ui/main_ui.ui" line="260"/>
+        <location filename="../ui/main_ui.ui" line="259"/>
         <source>Ctrl+Shift+S</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../ui/main_ui.ui" line="265"/>
+        <location filename="../ui/main_ui.ui" line="264"/>
         <source>Exit</source>
         <translation>退出</translation>
     </message>
     <message>
-        <location filename="../ui/main_ui.ui" line="268"/>
+        <location filename="../ui/main_ui.ui" line="267"/>
         <source>Exit application</source>
         <translation>退出应用程序</translation>
     </message>
     <message>
-        <location filename="../ui/main_ui.ui" line="277"/>
+        <location filename="../ui/main_ui.ui" line="276"/>
         <source>Screen</source>
         <translation>屏幕</translation>
     </message>
     <message>
-        <location filename="../ui/main_ui.ui" line="280"/>
+        <location filename="../ui/main_ui.ui" line="279"/>
         <source>Add screen</source>
         <translation>添加屏幕</translation>
     </message>
     <message>
-        <location filename="../ui/main_ui.ui" line="289"/>
+        <location filename="../ui/main_ui.ui" line="288"/>
         <source>Program</source>
         <translation>节目</translation>
     </message>
     <message>
-        <location filename="../ui/main_ui.ui" line="292"/>
+        <location filename="../ui/main_ui.ui" line="291"/>
         <source>Add program</source>
         <translation>添加节目</translation>
     </message>
     <message>
-        <location filename="../ui/main_ui.ui" line="301"/>
+        <location filename="../ui/main_ui.ui" line="300"/>
         <source>Region</source>
         <translation>区域</translation>
     </message>
     <message>
-        <location filename="../ui/main_ui.ui" line="304"/>
+        <location filename="../ui/main_ui.ui" line="303"/>
         <source>Add region</source>
         <translation>添加区域</translation>
     </message>
     <message>
-        <location filename="../ui/main_ui.ui" line="313"/>
+        <location filename="../ui/main_ui.ui" line="312"/>
         <source>Text</source>
         <translation>文本</translation>
     </message>
     <message>
-        <location filename="../ui/main_ui.ui" line="316"/>
+        <location filename="../ui/main_ui.ui" line="315"/>
         <source>Add text</source>
         <translation>添加文本</translation>
     </message>
     <message>
-        <location filename="../ui/main_ui.ui" line="325"/>
+        <location filename="../ui/main_ui.ui" line="324"/>
         <source>Picture</source>
         <translation>图片</translation>
     </message>
     <message>
-        <location filename="../ui/main_ui.ui" line="328"/>
+        <location filename="../ui/main_ui.ui" line="327"/>
         <source>Add picture</source>
         <translation>添加图片</translation>
     </message>
     <message>
-        <location filename="../ui/main_ui.ui" line="337"/>
+        <location filename="../ui/main_ui.ui" line="336"/>
         <source>Video</source>
         <translation>视频</translation>
     </message>
     <message>
-        <location filename="../ui/main_ui.ui" line="340"/>
+        <location filename="../ui/main_ui.ui" line="339"/>
         <source>Add video</source>
         <translation>添加视频</translation>
     </message>
     <message>
-        <location filename="../ui/main_ui.ui" line="352"/>
+        <location filename="../ui/main_ui.ui" line="351"/>
         <source>Play all screen</source>
         <translation>播放所有屏幕</translation>
     </message>
     <message>
-        <location filename="../ui/main_ui.ui" line="362"/>
-        <location filename="../ui/main_ui.ui" line="365"/>
+        <location filename="../ui/main_ui.ui" line="361"/>
+        <location filename="../ui/main_ui.ui" line="364"/>
         <source>Delete</source>
         <translation>删除</translation>
     </message>
     <message>
-        <location filename="../ui/main_ui.ui" line="374"/>
+        <location filename="../ui/main_ui.ui" line="373"/>
         <source>Card</source>
         <translation>硬件</translation>
     </message>
     <message>
-        <location filename="../ui/main_ui.ui" line="377"/>
+        <location filename="../ui/main_ui.ui" line="376"/>
         <source>Card configuration</source>
         <translation>硬件配置</translation>
     </message>
     <message>
-        <location filename="../ui/main_ui.ui" line="389"/>
+        <location filename="../ui/main_ui.ui" line="388"/>
         <source>Stop</source>
         <translation>停止</translation>
     </message>
     <message>
-        <location filename="../ui/main_ui.ui" line="392"/>
+        <location filename="../ui/main_ui.ui" line="391"/>
         <source>Stop all playing screen</source>
         <translation>停止所有播放屏幕</translation>
     </message>
     <message>
-        <location filename="../ui/main_ui.ui" line="397"/>
+        <location filename="../ui/main_ui.ui" line="396"/>
         <source>Move Up</source>
         <translation>上移</translation>
     </message>
     <message>
-        <location filename="../ui/main_ui.ui" line="400"/>
+        <location filename="../ui/main_ui.ui" line="399"/>
         <source>Move up</source>
         <translation>上移</translation>
     </message>
     <message>
-        <location filename="../ui/main_ui.ui" line="405"/>
+        <location filename="../ui/main_ui.ui" line="404"/>
         <source>Move Down</source>
         <translation>下移</translation>
     </message>
     <message>
-        <location filename="../ui/main_ui.ui" line="408"/>
+        <location filename="../ui/main_ui.ui" line="407"/>
         <source>Move down</source>
         <translation>下移</translation>
     </message>
     <message>
-        <location filename="../ui/main_ui.ui" line="417"/>
+        <location filename="../ui/main_ui.ui" line="416"/>
         <source>Watch</source>
         <translation>表盘</translation>
     </message>
     <message>
-        <location filename="../ui/main_ui.ui" line="420"/>
+        <location filename="../ui/main_ui.ui" line="419"/>
         <source>Add watch</source>
         <translation>添加表盘</translation>
     </message>
     <message>
-        <location filename="../ui/main_ui.ui" line="429"/>
+        <location filename="../ui/main_ui.ui" line="428"/>
         <source>Clock</source>
         <translation>时钟</translation>
     </message>
     <message>
-        <location filename="../ui/main_ui.ui" line="432"/>
+        <location filename="../ui/main_ui.ui" line="431"/>
         <source>Add clock</source>
         <translation>添加时钟</translation>
     </message>
     <message>
-        <location filename="../ui/main_ui.ui" line="441"/>
+        <location filename="../ui/main_ui.ui" line="440"/>
         <source>Timer</source>
         <translation>计时器</translation>
     </message>
     <message>
-        <location filename="../ui/main_ui.ui" line="444"/>
+        <location filename="../ui/main_ui.ui" line="443"/>
         <source>Add timer</source>
         <translation>添加计时器</translation>
     </message>
     <message>
-        <location filename="../ui/main_ui.ui" line="453"/>
+        <location filename="../ui/main_ui.ui" line="452"/>
         <source>Office</source>
         <translation>Office</translation>
     </message>
     <message>
-        <location filename="../ui/main_ui.ui" line="456"/>
+        <location filename="../ui/main_ui.ui" line="455"/>
         <source>Add office</source>
         <translation>添加 Office文件</translation>
     </message>
     <message>
-        <location filename="../ui/main_ui.ui" line="461"/>
+        <location filename="../ui/main_ui.ui" line="460"/>
         <source>Expand All</source>
         <translation>全部展开</translation>
     </message>
     <message>
-        <location filename="../ui/main_ui.ui" line="464"/>
+        <location filename="../ui/main_ui.ui" line="463"/>
         <source>Expand all</source>
         <translation>全部展开</translation>
     </message>
     <message>
-        <location filename="../ui/main_ui.ui" line="469"/>
+        <location filename="../ui/main_ui.ui" line="468"/>
         <source>Collapse All</source>
         <translation>全部收缩</translation>
     </message>
     <message>
-        <location filename="../ui/main_ui.ui" line="472"/>
+        <location filename="../ui/main_ui.ui" line="471"/>
         <source>Collapse all</source>
         <translation>全部收缩</translation>
     </message>
     <message>
-        <location filename="../ui/main_ui.ui" line="477"/>
-        <location filename="../ui/main_ui.ui" line="480"/>
+        <location filename="../ui/main_ui.ui" line="476"/>
+        <location filename="../ui/main_ui.ui" line="479"/>
         <source>Chinese Simplified</source>
         <translation>中文简体</translation>
     </message>
     <message>
-        <location filename="../ui/main_ui.ui" line="500"/>
+        <location filename="../ui/main_ui.ui" line="499"/>
         <source>Chinese Traditional</source>
         <translation>中文繁體</translation>
     </message>
     <message>
-        <location filename="../ui/main_ui.ui" line="485"/>
+        <location filename="../ui/main_ui.ui" line="484"/>
         <source>English</source>
         <translation>English</translation>
     </message>
     <message>
-        <location filename="../ui/main_ui.ui" line="490"/>
+        <location filename="../ui/main_ui.ui" line="489"/>
         <source>Context  Help</source>
         <translation>帮助文档</translation>
     </message>
     <message>
-        <location filename="../ui/main_ui.ui" line="495"/>
+        <location filename="../ui/main_ui.ui" line="494"/>
         <source>About  VShow...</source>
         <translation>关于 VShow...</translation>
-    </message>
-    <message>
-        <location filename="../ui/clock.cpp" line="28"/>
-        <source>Clock %1</source>
-        <translation>时钟 %1</translation>
     </message>
     <message>
         <location filename="../ui/main_ui.cpp" line="180"/>
@@ -1041,14 +1041,14 @@
         <location filename="../ui/main_ui.cpp" line="182"/>
         <location filename="../ui/main_ui.cpp" line="194"/>
         <location filename="../ui/main_ui.cpp" line="206"/>
-        <location filename="../ui/main_ui.cpp" line="688"/>
+        <location filename="../ui/main_ui.cpp" line="678"/>
         <source>Project (*.xml)</source>
         <translation>工程文件 (*.xml)</translation>
     </message>
     <message>
         <location filename="../ui/main_ui.cpp" line="192"/>
         <location filename="../ui/main_ui.cpp" line="204"/>
-        <location filename="../ui/main_ui.cpp" line="686"/>
+        <location filename="../ui/main_ui.cpp" line="676"/>
         <source>Save Project</source>
         <translation>保存工程</translation>
     </message>
@@ -1065,9 +1065,9 @@
     <message>
         <location filename="../ui/main_ui.cpp" line="567"/>
         <location filename="../ui/main_ui.cpp" line="587"/>
-        <location filename="../ui/main_ui.cpp" line="606"/>
-        <location filename="../ui/main_ui.cpp" line="625"/>
-        <location filename="../ui/main_ui.cpp" line="644"/>
+        <location filename="../ui/main_ui.cpp" line="601"/>
+        <location filename="../ui/main_ui.cpp" line="615"/>
+        <location filename="../ui/main_ui.cpp" line="634"/>
         <source>Please restart the application!</source>
         <translation>请重启应用程序!</translation>
     </message>
@@ -1079,9 +1079,8 @@
     <message>
         <location filename="../ui/main_ui.cpp" line="571"/>
         <location filename="../ui/main_ui.cpp" line="591"/>
-        <location filename="../ui/main_ui.cpp" line="610"/>
-        <location filename="../ui/main_ui.cpp" line="629"/>
-        <location filename="../ui/main_ui.cpp" line="648"/>
+        <location filename="../ui/main_ui.cpp" line="619"/>
+        <location filename="../ui/main_ui.cpp" line="638"/>
         <source>dones&apos;t exist!</source>
         <translation>不存在!</translation>
     </message>
@@ -1096,49 +1095,29 @@
         <translation>语言不能切换到中文繁体.</translation>
     </message>
     <message>
-        <location filename="../ui/main_ui.cpp" line="605"/>
+        <location filename="../ui/main_ui.cpp" line="600"/>
         <source>Language has been switched to English.</source>
         <translation>语言已经切换到英语.</translation>
     </message>
     <message>
-        <location filename="../ui/main_ui.cpp" line="609"/>
-        <source>Language dones&apos;t switch to English.</source>
-        <translation>语言不能切换到英语.</translation>
-    </message>
-    <message>
-        <location filename="../ui/main_ui.cpp" line="624"/>
+        <location filename="../ui/main_ui.cpp" line="614"/>
         <source>Language has been switched to Japanese.</source>
         <translation>语言已经切换到日语.</translation>
     </message>
     <message>
-        <location filename="../ui/main_ui.cpp" line="628"/>
+        <location filename="../ui/main_ui.cpp" line="618"/>
         <source>Language dones&apos;t switch to Japanese.</source>
         <translation>语言不能切换到日语.</translation>
     </message>
     <message>
-        <location filename="../ui/main_ui.cpp" line="643"/>
+        <location filename="../ui/main_ui.cpp" line="633"/>
         <source>Language has been switched to Korean.</source>
         <translation>语言已经切换到韩语.</translation>
     </message>
     <message>
-        <location filename="../ui/main_ui.cpp" line="647"/>
+        <location filename="../ui/main_ui.cpp" line="637"/>
         <source>Language dones&apos;t switch to Korean.</source>
         <translation>语言不能切换到韩语.</translation>
-    </message>
-    <message>
-        <location filename="../ui/office.cpp" line="38"/>
-        <source>Office %1</source>
-        <translation>Office %1</translation>
-    </message>
-    <message>
-        <location filename="../ui/timer.cpp" line="28"/>
-        <source>Timer %1</source>
-        <translation>计时器 %1</translation>
-    </message>
-    <message>
-        <location filename="../ui/watch.cpp" line="29"/>
-        <source>Watch %1</source>
-        <translation>表盘 %1</translation>
     </message>
 </context>
 <context>
@@ -1152,6 +1131,11 @@
         <location filename="../ui/office.cpp" line="10"/>
         <source>Office File:</source>
         <translation>Office文件:</translation>
+    </message>
+    <message>
+        <location filename="../ui/office.cpp" line="38"/>
+        <source>Office %1</source>
+        <translation>Office %1</translation>
     </message>
 </context>
 <context>
@@ -1194,6 +1178,11 @@
         <source>Picture File:</source>
         <translation>图片文件:</translation>
     </message>
+    <message>
+        <location filename="../ui/picture.cpp" line="25"/>
+        <source>Picture %1</source>
+        <translation>图片 %1</translation>
+    </message>
 </context>
 <context>
     <name>PlayCtrl</name>
@@ -1221,6 +1210,14 @@
         <location filename="../ui/play_ctrl.ui" line="166"/>
         <source>silence</source>
         <translation>静音</translation>
+    </message>
+</context>
+<context>
+    <name>Program</name>
+    <message>
+        <location filename="../ui/program.cpp" line="18"/>
+        <source>Program %1</source>
+        <translation>节目 %1</translation>
     </message>
 </context>
 <context>
@@ -1277,6 +1274,14 @@
     </message>
 </context>
 <context>
+    <name>Region</name>
+    <message>
+        <location filename="../ui/region.cpp" line="20"/>
+        <source>Region %1</source>
+        <translation>区域 %1</translation>
+    </message>
+</context>
+<context>
     <name>ScanUi</name>
     <message>
         <location filename="../ui/scan_ui.ui" line="14"/>
@@ -1330,6 +1335,7 @@
     </message>
     <message>
         <location filename="../ui/scan_ui.ui" line="181"/>
+        <location filename="../ui/scan_ui.cpp" line="82"/>
         <source>Black</source>
         <translation>黑色</translation>
     </message>
@@ -1384,6 +1390,29 @@
         <source>Reset</source>
         <translation>重置</translation>
     </message>
+    <message>
+        <location filename="../ui/scan_ui.cpp" line="82"/>
+        <source>Red</source>
+        <translation>红</translation>
+    </message>
+    <message>
+        <location filename="../ui/scan_ui.cpp" line="82"/>
+        <source>Green</source>
+        <translation>绿</translation>
+    </message>
+    <message>
+        <location filename="../ui/scan_ui.cpp" line="82"/>
+        <source>Blue</source>
+        <translation>蓝</translation>
+    </message>
+</context>
+<context>
+    <name>Screen</name>
+    <message>
+        <location filename="../ui/screen.cpp" line="16"/>
+        <source>Screen %1</source>
+        <translation>屏幕 %1</translation>
+    </message>
 </context>
 <context>
     <name>ScreenCfger</name>
@@ -1423,6 +1452,11 @@
         <location filename="../ui/text.cpp" line="9"/>
         <source>Texts (*.txt)</source>
         <translation>文本文件 (*.txt)</translation>
+    </message>
+    <message>
+        <location filename="../ui/text.cpp" line="18"/>
+        <source>Text %1</source>
+        <translation>文字 %1</translation>
     </message>
 </context>
 <context>
@@ -1504,6 +1538,11 @@
         <location filename="../ui/timer.cpp" line="7"/>
         <source>Images (*.bmp *.jpg *.png)</source>
         <translation>图片文件 (*.bmp *.jpg *.png)</translation>
+    </message>
+    <message>
+        <location filename="../ui/timer.cpp" line="28"/>
+        <source>Timer %1</source>
+        <translation>计时器 %1</translation>
     </message>
 </context>
 <context>
@@ -1649,6 +1688,11 @@
         <source>Video File:</source>
         <translation>视频文件:</translation>
     </message>
+    <message>
+        <location filename="../ui/video.cpp" line="18"/>
+        <source>Video %1</source>
+        <translation>视频 %1</translation>
+    </message>
 </context>
 <context>
     <name>Watch</name>
@@ -1656,6 +1700,11 @@
         <location filename="../ui/watch.cpp" line="8"/>
         <source>Images (*.bmp *.jpg *.png)</source>
         <translation>图片文件 (*.bmp *.jpg *.png)</translation>
+    </message>
+    <message>
+        <location filename="../ui/watch.cpp" line="29"/>
+        <source>Watch %1</source>
+        <translation>表盘 %1</translation>
     </message>
 </context>
 <context>

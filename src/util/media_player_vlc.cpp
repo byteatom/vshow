@@ -5,38 +5,50 @@
 VlcInstance *MediaPlayerVlc::vlcInstance = nullptr;
 
 MediaPlayerVlc::MediaPlayerVlc() :
-    VlcMediaPlayer{vlcInstance ? vlcInstance : (vlcInstance =
-        new VlcInstance{VlcCommon::args(), qApp})},
-    vlcMedia{nullptr}
+	VlcMediaPlayer(vlcInstance ? vlcInstance :
+		(vlcInstance = new VlcInstance{VlcCommon::args(), qApp})),
+	vlcMedia{nullptr}
 {
+	stopTask = std::bind(&MediaPlayerVlc::stop, this);
 }
 
 MediaPlayerVlc::~MediaPlayerVlc()
 {
-    stop();
-    if (vlcMedia) delete vlcMedia;
+	//fut = std::async(std::launch::async, [this](){stop();});
+	//fut.wait();
+	stop();
+	if (vlcMedia) delete vlcMedia;
 }
 
 void MediaPlayerVlc::open(QString &path)
 {
-    if (vlcMedia) delete vlcMedia;
-    vlcMedia = new VlcMedia(path, true, vlcInstance);
-    VlcMediaPlayer::openOnly(vlcMedia);
+	if (vlcMedia) delete vlcMedia;
+	vlcMedia = new VlcMedia(path, true, vlcInstance);
+	openOnly(vlcMedia);
+	//fut = std::async(std::launch::async, [this](){openOnly(vlcMedia);});
+	//fut.wait();
 }
 
 void MediaPlayerVlc::play()
 {
-    if (Vlc::Paused == state())
-        VlcMediaPlayer::resume();
-    else
-        VlcMediaPlayer::play();
+	if (Vlc::Paused == state()) {
+		resume();
+		//fut = std::async(std::launch::async, [this](){resume();});
+	} else {
+		VlcMediaPlayer::play();
+		//fut = std::async(std::launch::async, [this](){VlcMediaPlayer::play();});
+	}
+	//fut.wait();
 }
 
 void MediaPlayerVlc::stopSilent()
 {
-    blockSignals(true);
-    stop();
-    blockSignals(false);
+	blockSignals(true);
+	stop();
+	//tasker.addTask(&stopTask);
+	//fut = std::async(std::launch::async, [this](){stop();});
+	//fut.wait();
+	blockSignals(false);
 }
 
 
