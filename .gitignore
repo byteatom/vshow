@@ -1,12 +1,8 @@
-/bak/
-/candy/
-/doc/
-/image/
 /lib/boost_1_57_0/
-/media/
 /tmp/
-/tool/
-/tmp/
+/run/*debug*
+/run/*x86_64*
+*.fuse_hidden*
 
 # Object files
 *.o

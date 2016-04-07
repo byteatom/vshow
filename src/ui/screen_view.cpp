@@ -26,8 +26,7 @@ ScreenView::ScreenView(Screen *screen)
 	// setAttribute(Qt::WA_PaintOnScreen, true);
 
 	// setWindowOpacity(0.5);
-	// setStyleSheet("ScreenDlg {border: 1px solid red; background-color:
-	// rgba(0, 0, 0, 0)");
+	// setStyleSheet("ScreenDlg {border: 1px solid red; background-color:rgba(0, 0, 0, 0)");
 	/*QPalette pal(palette());
 	pal.setColor(QPalette::Background, QColor(128, 0, 0, 128));
 	setPalette(pal);
